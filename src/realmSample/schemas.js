@@ -5,7 +5,11 @@ Organisation.schema = {
     id: 'string',
     name: 'string',
     email: 'string',
-    password: 'string'
+    password: 'string',
+    isDeleted: {
+      type: 'bool',
+      default: false
+    }
   }
 };
 
@@ -16,7 +20,15 @@ User.schema = {
     id: 'string',
     email: 'string',
     password: 'string',
-    organisation_id: 'string'
+    organisation_id: 'string',
+    isDeleted: {
+      type: 'bool',
+      default: false
+    },
+    isOrgAccount: {
+      type: 'bool',
+      default: false
+    }
   }
 };
 
@@ -26,7 +38,16 @@ LocalUser.schema = {
   name: 'LocalUser',
   properties: {
     id: 'string',
-    email: 'string'
+    email: 'string',
+    roles: 'string',
+    isDeleted: {
+      type: 'bool',
+      default: false
+    },
+    isOrgAccount: {
+      type: 'bool',
+      default: false
+    }
   }
 };
 
@@ -37,7 +58,11 @@ Project.schema = {
     id: 'string',
     name: 'string',
     createdBy: 'string',
-    createdAt: 'date'
+    createdAt: 'date',
+    isDeleted: {
+      type: 'bool',
+      default: false
+    }
   }
 };
 
@@ -48,7 +73,11 @@ Template.schema = {
     id: 'string',
     treeData: 'string',
     createdBy: 'string',
-    createdAt: 'date'
+    createdAt: 'date',
+    isDeleted: {
+      type: 'bool',
+      default: false
+    }
   }
 };
 

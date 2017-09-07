@@ -4,11 +4,11 @@ import {
 
 export default config = Platform.select({
   ios: {
-    "commonRealmUri": "realm://yourip:9080/commonrealmid/common",
-    "realmUri": "http://yourip:9080"
+    "commonRealmUri": "realm://52.187.39.22:9080/13cd2a1671cddf45c9db98d43f20523b/common",
+    "realmUri": "http://52.187.39.22:9080"
   },
   android: {
-    "commonRealmUri": "realm://yourip:9080/commonrealmid/common",
-    "realmUri": "http://yourip:9080"
+    "commonRealmUri": "realm://52.187.39.22:9080/13cd2a1671cddf45c9db98d43f20523b/common",
+    "realmUri": "http://52.187.39.22:9080"
   }
 });
